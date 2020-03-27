@@ -1,0 +1,129 @@
+/* MEDIA QUERY */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #sidebar {
+        flex-basis: 10%;
+    }
+    .u-small-device {
+        display: none;
+    }
+    .u-small-device-inline {
+        display: none;
+    }
+    .u-large-device {
+        display: block;
+    }
+    .content-top-bar button {
+        padding: 5px 25px;
+    }
+    .img-album img{
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+    .central-player {
+        flex-basis: 250px;
+    }
+    .icon-player {
+        padding-left: 9px;
+    }
+    .time-player {
+        padding-right: 10px;
+    }
+    .content-menu {
+        max-width: 100%;
+    }
+    .u-list-inline li a {
+        font-size: 10px;
+    }
+    .container-album {
+        flex-wrap: wrap;
+    }
+    .cover-album {
+        margin: 20px 33px 88px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up, e.g. iPad Portrait) */
+@media (min-width: 768px) {
+    #sidebar {
+        flex-basis: 220px;
+    }
+    .u-small-device {
+        display: block;
+    }
+    .u-small-device-inline {
+        display: inline;
+    }
+    .u-large-device {
+        display: none;
+    }
+    .central-player {
+        flex-basis: 500px;
+    }
+    .u-list-inline li a {
+        font-size: 14px;
+    }
+    .cover-album {
+        margin: 20px 10px 10p
+    }
+    .content-top-bar button {
+        padding: 8px 34px;
+    }
+}
+
+/* Large devices (desktops, 992px and up, e.g. iPad Landscape) */
+@media (min-width: 992px) {
+    #sidebar {
+        flex-basis: 220px;
+    }
+    .u-small-device {
+        display: block;
+    }
+    .u-small-device-inline {
+        display: inline;
+    }
+    .u-large-device {
+        display: none;
+    }
+    .central-player {
+        flex-basis: 500px;
+    }
+    .u-list-inline li a {
+        font-size: 14px;
+    }
+    .cover-album {
+        margin: 20px 10px 10p
+    }
+    .content-top-bar button {
+        padding: 8px 34px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up, PC/MacBook) */
+@media (min-width: 1200px) {
+    #sidebar {
+        flex-basis: 220px;
+    }
+    .u-small-device {
+        display: block;
+    }
+    .u-small-device-inline {
+        display: inline;
+    }
+    .u-large-device {
+        display: none;
+    }
+    .central-player {
+        flex-basis: 500px;
+    }
+    .u-list-inline li a {
+        font-size: 14px;
+    }
+    .cover-album {
+        margin: 20px 10px 10px;
+    }
+    .content-top-bar button {
+        padding: 8px 34px;
+    }                
+}
