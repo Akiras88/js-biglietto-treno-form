@@ -12,10 +12,17 @@
     .menu  {
         display: none;
     }
+    .wrapper {
+        flex-direction: column;
+    }
 }
 
 /* Medium devices (tablets, 768px and up, e.g. iPad Portrait) */
 @media (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+    }
     .km {
         position: relative;
         left: 290px;
@@ -43,10 +50,20 @@
     .container {
         left: 220px;
     }
+    .wrapper {
+        flex-direction: column;
+    }
 }
 
 /* Large devices (desktops, 992px and up, e.g. iPad Landscape) */
 @media (min-width: 992px) {
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .wrapper h1 {
+        font-size: 40px;
+    }
     .hamburger {
         display: none;
     }
