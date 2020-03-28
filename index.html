@@ -2,28 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="shared/css/style.css">
+    <link rel="stylesheet" href="shared/css/media.css">
+    <!-- icons set -->
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
+    <header id="Header">
+        <div class="logo">
+            <img src="img/rt-logo.svg" alt="logo">
+            <span class="text-russ u-upperCase">russian<span class="text-rains">rains</span>                       
+            </span>
+        </div>
+        <div class="hamburger">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+        <div class="menu">
+            <ul class="u-list-inline">
+                <li>
+                    <a href="#">Cerca Treni</a>
+                </li>
+                <li>
+                    <a href="#">Treni Popolari</a>
+                </li>
+                <li>
+                    <a href="#">Chi Siamo</a>
+                </li>
+                <li>
+                    <button class="btn-small">Sign in</button>
+                </li>
+            </ul>
+        </div>
+    </header>
     
+    <!-- jumbotron -->
     <div class="wrapper">
-        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
-
+        <h1 class="title u-white-color">Calcola il prezzo del tuo biglietto</h1>
         <div class="dati-input">
-            <div class="row">
+            <div class="row u-white-color">
                 <div class="col">
                     <label for="nome">Nome e Cognome</label>
                     <input id="nome" type="text" 
-                           name="nome"
+                            name="nome"
                             placeholder="inserisci il tuo nome"
                     >
                 </div>
                 <div class="col">
                     <label for="km">Km da percorrere</label>
                     <input id="km" type="number" min="1" max="300"
-                           name="km"
+                            name="km"
                             placeholder="inserisci i Km"
                     >
                 </div>
@@ -36,21 +67,21 @@
                     </select>
                 </div>
             </div>
-
             <div class="row">
                 <button class="btn" id="bottoneGenera">Genera</button>
                 <button class="btn" id="bottoneAnnulla">Annulla</button>
             </div>
-        </div>
+        </div> 
+    </div>
 
-        <section id="biglietto" class="hidden">
+    <!-- section ticket -->
+    <section id="biglietto" class="hidden">
+       <div class="container"> 
             <h2 class="title">Il tuo biglietto</h2>
-
             <h3>Dettagli passeggeri</h3>
-
             <div class="contenuti">
                 <div class="nome">
-                    <h2>Nome Passeggero</h2>
+                    <h2>Nome Passeggero:</h2>
                     <h3 id="nome-passeggero"></h3>
                 </div>
                 <div class="offerta">
@@ -82,8 +113,84 @@
                     </table>
                 </div>
             </div>
-        </section>
-    </div>
+       </div>
+    </section>
+
+    <!-- section route -->
+    <main>
+        <div class="map">
+            <div class="to-go">
+                <span class="km">8232km</span>
+                <div class="city-sx">Mosca</div>
+                <div><i class="fas fa-map-marker-alt"></i></div>
+                <div class="line"></div>
+                <div><i class="fas fa-map-marker-alt"></i></div>
+                <div class="city-dx">Vladivostok</div>
+            </div>
+            <div class="route">
+                <div class="list-sx">
+                    <h2 class="u-upperCase u-text-center">Stazione di partenza</h2>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i> Stazione Leningradskiy</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i> Stazione Kazanskiy</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i> Stanzione Yaroslavskiy</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i> Stazione Kurskiy</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i> Stazione Kievskiy</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i> Stazione Paveletskiy</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i> Stazione Rizhskiy</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i> Stazione Belorusskiy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-dx">
+                    <h2 class="u-upperCase u-text-center">Stazione di arrivo</h2>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fas fa-map-marker-alt"></i> Vladivostok</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- section history -->
+            <section class="history">
+                <h2>La ferrovia più lunga del mondo</h2>
+                <div class="story u-room-top-large">                    
+                    <div class="story-p"><p>Allungando a circa 9.289 chilometri (5.771 miglia) da Mosca a Vladivostok, la ferrovia transiberiana, costruita tra il 1890 e il 1916 sotto gli zar Alessandro III e Nicola II, detiene il primato come la ferrovia con servizio giornaliero più lunga del mondo. Oltre alle destinazioni terminali, </p></div>
+                    <div class="story-p"><p>ci sono oltre una dozzina di città principali, ognuna con attrazioni e altre caratteristiche che le rendono speciali. Ci vuole più di una settimana di tour in treno non-stop per andare da un capo all'altro mentre attraversi sette fusi orari, quasi un terzo del giro del pianeta!</p></div>
+                </div>
+                <h2>Orario dei treni transiberiani</h2>
+                <div class="story u-room-top-large">
+                    <div class="story-p"><p>Per i viaggiatori che pianificano i loro tour della ferrovia Transiberiana per ogni tappa di questa grande avventura sul nostro sito. Raccomandiamo insistentemente di pianificare il viaggio così presto como è possibile. Per ogni viaggiatore per ottenere il massimo dal loro giro ferroviario </p></div>
+                    <div class="story-p"><p>transiberiano, vorranno pianificare con largo anticipo (e siccome i biglietti cartacei sono necessari, limitazioni di consegna fanno pre-pianificazione inevitabili).</div>
+                </div>
+                <h2>Giri transiberiani ferroviari</h2>         
+                <div class="story u-room-top-large">
+                    <div class="story-p"><p>I nostri specialisti del viaggio sono ansiosi di aiutare i viaggiatori con qualsiasi pianificazione professionale e utili consigli. Siamo molto noti per i nostri pacchetti della ferrovia Transiberiana che includono guide esperte in tutte le fermate più straordinarie, i soggiorni negli hotel più confortevoli, il supporto per il visto russo, i biglietti ferroviari della Siberia e molto altro. </p></div>
+                    <div class="story-p"><p>Teniamo d'occhio gli sviluppi del turismo in Siberia per offrirti le opzioni di vacanza in treno più all'avanguardia. Come risultato di una ricerca così scrupolosa, possiamo offrirti esperienze insuperabili e indimenticabili che susciteranno l'invidia dei tuoi amici e della tua famiglia.</p></div>
+                </div>
+            </section>
+        </div>
+
+        
+
+        
+    </main>
 
     <!-- JS -->
     <script src="js/main.js"></script>

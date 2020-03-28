@@ -1,6 +1,189 @@
+/* HEADER STYLE */
+
+#Header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    vertical-align: middle;
+    padding: 5px 0 10px 10px;
+}
+.text-russ {
+    font-size: 20px;
+}
+.text-rains {
+    font-size: 20px;
+    color: #c90000;
+}
+.hamburger {
+    display: block;
+    padding: 8px 10px 10px 0;
+}
+.fa-bars  {
+    text-decoration: none;
+    font-size: 25px;
+    color: #acacad;
+}
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: 10px;
+}
+.btn-small {
+    padding: 10px;
+    margin: 5px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #acacad;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    height: 40px;
+    font-size: 17px;
+}
+/* JUMBOTRON STYLE */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
+}
+label, 
+input,
+select {
+    display: block;
+    padding: 10px 0 30px 0;
+    width: 300px;
+    border-top: 0 transparent;
+    border-left: 0 transparent;
+    border-right: 0 transparent;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 20px;
+} 
+.row button {
+    background: #ffae00;
+    margin: 30px 0 30px;
+    border-top: 0 transparent;
+    border-left: 0 transparent;
+    border-right: 0 transparent;
+    padding: 24px 0 30px 0;
+    box-shadow: none;
+    width: 148px;
+    font-size: 20px;
+}
+ /* SECTION TICKET */
+
+#biglietto {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.container {
+    position: absolute;
+    min-height: 120px;
+    padding: 20px;
+    top: 60px;
+    left: 50px;
+    background:#B9B9B9;
+    border-radius: 10px;
+}
+.container h2,
+.container h3 {
+    text-align: center;
+}
+/* SECTION ROUTE */
+
+.map {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/Blank_Map_Pacific_World.svg);   
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* to-go style */
+.to-go {
+    display: flex;
+    justify-content: center;
+}
+.km {
+    position: relative;
+    top: 15px;
+    left: 201px;
+    max-height: 30px;
+}
+.line {
+    max-height: 30px;
+}
+.line::before  {
+    content: '';
+    display: block;
+    width: 105px;
+    height: 3px;
+    margin: 38px auto 40px;
+    background: currentcolor;  
+}
+.city-sx  {
+    flex-basis: 20%;
+    max-height: 30px;
+    margin: 30px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: right;
+}
+.city-dx  {
+    flex-basis: 20%;
+    max-height: 30px;
+    margin: 30px 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.fa-map-marker-alt  {
+    margin-top: 26px;
+    max-height: 30px;
+}
+/* route style */
+.route {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-sx ul li a,
+.list-dx ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+}
+li {
+    list-style: none;
+}
+/* SECTION HISTORY */
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.story p{
+    margin: 10px 5px;
+    font-size: 17px;
+}
+.history h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
 
 .show {
-    opacity: 1;
+    opacity: 1;  
 }
 
 .hidden {
