@@ -213,14 +213,8 @@ li {
     justify-content: space-around;
 }
 .column-info {
-    display: flex;
-    flex-direction: row;
-    max-width: 600px;
-    justify-content: space-between;
+    display: flex;   
     padding: 30px 0 20px 30px;
-}
-.price {
-    padding-left: 100px;
 }
 
 /* SECTION ROUTES */
@@ -234,6 +228,9 @@ li {
     border: 1px solid #000;
     margin-top: 30px;
     position: relative;
+}
+.container-img h4 {
+    padding-top: 20px;
 }
 /* hover effect */
 .cover img {
@@ -265,4 +262,35 @@ li {
 }
 .cover:hover .middle {
     opacity: 1;
+}
+
+/* FOOTER */
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EAEAEA;
+}
+.footer-sx img {
+    max-width: 200px;
+}
+.footer-sx,
+.footer-cnt,
+.footer-dx {
+    max-width: 400px;
+    padding-top: 30px;
+}
+.footer-sx li a,
+.footer-cnt li a {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+.footer-sx li a:hover,
+.footer-cnt li a:hover {
+    color: royalblue;
+}
+.footer-sx img {
+    padding-bottom: 20px;
 }

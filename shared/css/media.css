@@ -15,6 +15,15 @@
     .wrapper {
         flex-direction: column;
     }
+    .train-information {
+        flex-direction: column;
+    }      
+    .price {
+        padding-left: 50px;
+    }  
+    .room-bottom {
+        margin-bottom: 30px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up, e.g. iPad Portrait) */
@@ -85,6 +94,30 @@
     .row button {
         padding: 20px 0 25px 0;
     }
+    .price {
+        padding-left: 100px;
+    }
+    .column-info {
+        justify-content: space-between;
+    }
+    .train-information {
+        flex-direction: row;
+    }
+    .routes-img {
+        flex-direction: row;
+        margin: 30px;
+        justify-content: space-around;
+    }
+    .room-bottom {
+        margin-bottom: 0;
+    }
+    .Footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .container-img {
+        min-width: 400px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up, PC/MacBook) */
@@ -100,5 +133,8 @@
     }
     .container {
         left: 580px;
+    }
+    .column-info {
+        max-width: 600px;
     }
 }
