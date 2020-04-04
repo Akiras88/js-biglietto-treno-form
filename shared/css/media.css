@@ -115,9 +115,6 @@
         flex-direction: row;
         justify-content: space-around;
     }
-    .container-img {
-        min-width: 400px;
-    }
 }
 
 /* Extra large devices (large desktops, 1200px and up, PC/MacBook) */
@@ -136,5 +133,8 @@
     }
     .column-info {
         max-width: 600px;
+    }
+    .container-img {
+        min-width: 400px;
     }
 }
